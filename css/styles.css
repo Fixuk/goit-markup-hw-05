@@ -622,7 +622,6 @@ h3,
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon {
@@ -798,9 +797,8 @@ h3,
 }
 
 .modal-check:checked + .check-text .check-element {
-  border-radius: 2px;
+  border: none; /* ← важно */
   background-color: #404bbf;
-  border: 1px solid #404bbf;
   fill: #f4f4fd;
 }
 
